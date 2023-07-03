@@ -44,34 +44,24 @@
 </head>
 <body>
 	<form id="form1" runat="server">
-        <dx:ASPxCallback ID="ASPxCallback1" runat="server" ClientInstanceName="callback" OnCallback="ASPxCallback1_Callback">
-            <ClientSideEvents CallbackComplete="OnCallbackComplete" />
-        </dx:ASPxCallback>
-	<dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" DataSourceID="AccessDataSource1" ClientInstanceName="gridView"
-		KeyFieldName="EmployeeID">
+    <dx:ASPxCallback ID="ASPxCallback1" runat="server" ClientInstanceName="callback" OnCallback="ASPxCallback1_Callback">
+        <ClientSideEvents CallbackComplete="OnCallbackComplete" />
+    </dx:ASPxCallback>
+	<dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" ClientInstanceName="gridView" 
+                     DataSourceID="AccessDataSource1" KeyFieldName="EmployeeID">
         <ClientSideEvents CustomButtonClick="OnCustomButtonClick"/>
 		<Columns>
-			<dx:GridViewCommandColumn VisibleIndex="0">
+			<dx:GridViewCommandColumn >
 				<CustomButtons>
-					<dx:GridViewCommandColumnCustomButton ID="clientRedirect" Text="Load photo" >
-					</dx:GridViewCommandColumnCustomButton>
-                    <dx:GridViewCommandColumnCustomButton ID="callbackRedirect" Text="Load photo on callback">                        
-                    </dx:GridViewCommandColumnCustomButton>
+					<dx:GridViewCommandColumnCustomButton ID="clientRedirect" Text="Load photo" />
+                    <dx:GridViewCommandColumnCustomButton ID="callbackRedirect" Text="Load photo on callback" />
 				</CustomButtons>
 			</dx:GridViewCommandColumn>
-			<dx:GridViewDataTextColumn FieldName="EmployeeID" ReadOnly="True" VisibleIndex="1">
-				<EditFormSettings Visible="False" />
-			</dx:GridViewDataTextColumn>
-			<dx:GridViewDataTextColumn FieldName="LastName" VisibleIndex="2">
-			</dx:GridViewDataTextColumn>
-			<dx:GridViewDataTextColumn FieldName="FirstName" VisibleIndex="3">
-                <Settings AllowHeaderFilter="True" />
-                <SettingsHeaderFilter Mode="CheckedList"></SettingsHeaderFilter>
-			</dx:GridViewDataTextColumn>
-			<dx:GridViewDataDateColumn FieldName="BirthDate" VisibleIndex="4">
-			</dx:GridViewDataDateColumn>
-			<dx:GridViewDataTextColumn FieldName="Address" VisibleIndex="5">
-			</dx:GridViewDataTextColumn>
+			<dx:GridViewDataTextColumn FieldName="EmployeeID" />
+			<dx:GridViewDataTextColumn FieldName="LastName" />
+			<dx:GridViewDataTextColumn FieldName="FirstName" />
+			<dx:GridViewDataDateColumn FieldName="BirthDate" />
+ 			<dx:GridViewDataTextColumn FieldName="Address" />
 		</Columns>
 	</dx:ASPxGridView>
 	<asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/nwind.mdb"
