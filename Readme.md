@@ -13,7 +13,7 @@ This example shows how to load a file when a user clicks a custom command button
 
 ![](grid.png)
 
-When a user clicks a button, the corresponding file name, which equals Employee ID, is added to the `window.location.href` property as a parameter. On the server side, the file with the specified name is send to the client in response.
+When a user clicks a button, the corresponding file name, which equals to the **Employee ID**, is added to the `window.location.href` property as a parameter. On the server side, the file with the specified name is send to the client in response.
 
 ```cs
 protected void Page_Load(object sender, EventArgs e) {
@@ -73,6 +73,6 @@ function OnCallbackComplete(s, e) {
 
 * [Callbacks](https://docs.devexpress.com/AspNet/402559/common-concepts/callbacks)
 
-## More Examples → [Add links to the related examples]
+## More Examples
 
 * [ASPxTreeList - How to download a file by clicking a custom command button](https://github.com/DevExpress-Examples/aspxtreelist-how-to-download-a-file-by-clicking-a-custom-command-button-e3919)
