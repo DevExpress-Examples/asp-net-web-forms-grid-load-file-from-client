@@ -43,30 +43,30 @@
     </script>
 </head>
 <body>
-	<form id="form1" runat="server">
-    <dx:ASPxCallback ID="ASPxCallback1" runat="server" ClientInstanceName="callback" OnCallback="ASPxCallback1_Callback">
-        <ClientSideEvents CallbackComplete="OnCallbackComplete" />
-    </dx:ASPxCallback>
-	<dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" ClientInstanceName="gridView" 
-                     DataSourceID="AccessDataSource1" KeyFieldName="EmployeeID">
-        <ClientSideEvents CustomButtonClick="OnCustomButtonClick"/>
-		<Columns>
-			<dx:GridViewCommandColumn >
-				<CustomButtons>
-					<dx:GridViewCommandColumnCustomButton ID="clientRedirect" Text="Load photo" />
-                    <dx:GridViewCommandColumnCustomButton ID="callbackRedirect" Text="Load photo on callback" />
-				</CustomButtons>
-			</dx:GridViewCommandColumn>
-			<dx:GridViewDataTextColumn FieldName="EmployeeID" />
-			<dx:GridViewDataTextColumn FieldName="LastName" />
-			<dx:GridViewDataTextColumn FieldName="FirstName" />
-			<dx:GridViewDataDateColumn FieldName="BirthDate" />
- 			<dx:GridViewDataTextColumn FieldName="Address" />
-		</Columns>
-	</dx:ASPxGridView>
-	<asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/nwind.mdb"
-		SelectCommand="SELECT [EmployeeID], [LastName], [FirstName], [BirthDate], [Address], [Photo] FROM [Employees]">
-	</asp:AccessDataSource>
-	</form>
+    <form id="form1" runat="server">
+        <dx:ASPxCallback ID="ASPxCallback1" runat="server" ClientInstanceName="callback" OnCallback="ASPxCallback1_Callback">
+            <ClientSideEvents CallbackComplete="OnCallbackComplete" />
+        </dx:ASPxCallback>
+        <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" ClientInstanceName="gridView" 
+                         DataSourceID="AccessDataSource1" KeyFieldName="EmployeeID">
+            <ClientSideEvents CustomButtonClick="OnCustomButtonClick"/>
+            <Columns>
+                <dx:GridViewCommandColumn >
+                    <CustomButtons>
+                        <dx:GridViewCommandColumnCustomButton ID="clientRedirect" Text="Load photo" />
+                        <dx:GridViewCommandColumnCustomButton ID="callbackRedirect" Text="Load photo on callback" />
+                    </CustomButtons>
+                </dx:GridViewCommandColumn>
+                <dx:GridViewDataTextColumn FieldName="EmployeeID" />
+                <dx:GridViewDataTextColumn FieldName="LastName" />
+                <dx:GridViewDataTextColumn FieldName="FirstName" />
+                <dx:GridViewDataDateColumn FieldName="BirthDate" />
+                <dx:GridViewDataTextColumn FieldName="Address" />
+            </Columns>
+        </dx:ASPxGridView>
+        <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="~/App_Data/nwind.mdb"
+            SelectCommand="SELECT [EmployeeID], [LastName], [FirstName], [BirthDate], [Address], [Photo] FROM [Employees]">
+        </asp:AccessDataSource>
+    </form>
 </body>
 </html>
