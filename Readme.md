@@ -29,7 +29,7 @@ This example demonstrates how to specify the uploaded file name in two ways:
 
 For demonstration purposes, in both approaches it is prohibited to download the **9.png** file.
 
-## Specify the file name completely on the client side.
+## Specify the file name on the client.
 
 Handle the [CustomButtonClick](https://docs.devexpress.com/AspNet/js-ASPxClientGridView.CustomButtonClick) event to set the `window.location.href` property.
 
