@@ -9,11 +9,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/e2577/)**
 <!-- run online end -->
 
-This example shows how to load a file when a user clicks a custom command button in Grid. 
+This example shows how to load a file when a user clicks a custom command button in the Grid. 
 
 ![](grid.png)
 
-When a user clicks a button, the corresponding file name, which equals to the **Employee ID**, is added to the `window.location.href` property as a parameter. On the server side, the file with the specified name is send to the client in response.
+When a user clicks a button, the file with the corresponding **Employee ID**, is added to the `window.location.href` property as a parameter. On the server side, the file with the specified name is sent to the client in response.
 
 ```cs
 protected void Page_Load(object sender, EventArgs e) {
@@ -24,8 +24,8 @@ protected void Page_Load(object sender, EventArgs e) {
 
 This example demonstrates how to specify the uploaded file name in two ways:
 
-* Specify the name completely on the client side.
-* Send a callback to get the name from the server side.
+* Specify the name on the client.
+* Send a callback to get the name from the server.
 
 For demonstration purposes, in both approaches it is prohibited to download the **9.png** file.
 
@@ -39,7 +39,7 @@ function DoClientRedirect(value) {
 }
 ```
 
-## Send a callback to get the file name from the server side.
+## Send a callback to get the file name from the server.
 
 Add the [ASPxCallback](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxCallback) control to your application and call the [PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientCallback.PerformCallback(parameter)) method to sends a callback to the server.
 
