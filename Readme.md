@@ -66,8 +66,8 @@ function OnCallbackComplete(s, e) {
 
 ## Files to Review
 
-* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
-* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
+* [Default.aspx](./CS/Default.aspx)
+* [Default.aspx.cs](./CS/Default.aspx.cs)
 
 ## Documentation 
 
