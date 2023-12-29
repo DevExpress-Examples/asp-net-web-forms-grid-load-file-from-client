@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Grid View for ASP.NET Web Forms - How to load a file from the client side
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128541596/)**
-<!-- run online end -->
 
 This example shows how to load a file when a user clicks a custom command button in the Grid. 
 
